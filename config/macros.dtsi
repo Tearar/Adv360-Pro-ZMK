@@ -1,3 +1,9 @@
+macro_intellij_class: macro_intellij_class{
+compatible = "zmk,behavior-macro";
+label = "macro_intellij_class";
+#binding-cells = <0>;
+bindings = <&kp LEFT_CONTROL>, <&kp LEFT_SHIFT>, <&kp T>;
+};
 macro_macro_diamond: macro_macro_diamond{
 compatible = "zmk,behavior-macro";
 label = "macro_macro_diamond";
