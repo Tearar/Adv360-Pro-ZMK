@@ -1,3 +1,9 @@
+macro_equals: macro_equals{
+compatible = "zmk,behavior-macro";
+label = "macro_equals";
+#binding-cells = <0>;
+bindings = <&sk LSHIFT>, <&kp N0>;
+};
 macro_intellij_class: macro_intellij_class{
 compatible = "zmk,behavior-macro";
 label = "macro_intellij_class";
@@ -32,17 +38,11 @@ macro_parens: macro_parens{
 compatible = "zmk,behavior-macro";
 label = "macro_parens";
 #binding-cells = <0>;
-bindings = <&kp LSHIFT>, <&kp N8>, <&kp LSHIFT>, <&kp N9>, <&kp LEFT>;
+bindings = <&sk LSHIFT>, <&kp N8>, <&sk LSHIFT>, <&kp N9>, <&kp LEFT>;
 };
 macro_brackets: macro_brackets{
 compatible = "zmk,behavior-macro";
 label = "macro_brackets";
 #binding-cells = <0>;
 bindings = <&kp LBKT>, <&kp RBKT>, <&kp LEFT>;
-};
-macro_kinesis: macro_kinesis{
-compatible = "zmk,behavior-macro";
-label = "macro_kinesis";
-#binding-cells = <0>;
-bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
 };
